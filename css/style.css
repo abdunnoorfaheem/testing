@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    background: #000000;
+    color: #FFFFFF;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    padding: 34px 0px;
+}
+.container{
+    width: 1372px;
+    padding: 0 16px;
+    margin: auto;
+}
+.read_more {
+    color: #FBD784;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+section h3 {
+    color: #FFC178;
+    font-size: 18px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+section h2 {
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+/* common css */
+
+/* navbar  */
+nav{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.navBar ul {
+    display: flex;
+    gap: 60px;
+}
+.navBar ul li a{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* banner part */
+
+.banner{
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 299px 0px 439px 0px;
+}
+
+
+.banner_info h1 {
+    color: #FFFFFF;
+    font-size: 96px;
+    letter-spacing: 7px;
+    line-height: 100px;
+    font-weight: 700;
+    padding-top: 32px;
+}
+.banner_info h1 span {
+    font-size: 88px;
+    font-weight: 400;
+    display: block;
+}
+
+/* EAST NUSA TENGGARA STAR */
+.tenggara {
+    padding-top: 260px;
+}
+.tenggara_content {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+}
+.tenggara_content .text p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-top: 16px;
+    padding-bottom: 66px;
+}
+/* EAST NUSA TENGGARA END */
+
+
+/* BLOGS SECTION START */
+.blog_section {
+    padding-top: 262px;
+}
+.blogs {
+display: flex;
+gap:132px
+}
+
+.blog {
+    position: relative;
+}
+.blog .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+} 
+.blog .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+} 
+.blog .text h4 {
+    color: #FFC178;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.blog .text p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.blog:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+/* BLOGS SECTION END */
